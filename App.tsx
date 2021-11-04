@@ -8,6 +8,7 @@ import {
 } from "@expo-google-fonts/roboto";
 import AppLoading from "expo-app-loading";
 import { View, Text } from "react-native";
+import { MessageList } from "./src/components/MessageList";
 
 export default function App() {
   const [fontsLoaded] = useFonts({

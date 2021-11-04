@@ -4,22 +4,26 @@ import { COLORS, FONTS } from "../../theme";
 export const styles = StyleSheet.create({
   container: {
     width: "100%",
-    flexDirection: "row",
-    justifyContent: "space-between",
-    alignItems: "flex-start",
-    paddingHorizontal: 20,
+    marginBottom: 36,
   },
-  logo: {
-    paddingTop: 50,
-  },
-  logout: {
-    flexDirection: "row",
-    alignItems: "center",
-  },
-  logoutText: {
+  message: {
     fontSize: 15,
     fontFamily: FONTS.REGULAR,
     color: COLORS.WHITE,
-    marginRight: 20,
+    lineHeight: 20,
+    marginBottom: 12,
+  },
+
+  footer: {
+    width: "100%",
+    flexDirection: "row",
+    alignItems: "center",
+  },
+
+  userName: {
+    fontSize: 15,
+    fontFamily: FONTS.REGULAR,
+    color: COLORS.WHITE,
+    marginLeft: 16,
   },
 });

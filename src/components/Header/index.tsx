@@ -7,11 +7,13 @@ import { UserPhoto } from "../userPhoto";
 export function Header() {
   return (
     <View style={styles.container}>
-      <LogoSvg />
-      <UserPhoto imageUri="https://github.com/PedroHenrique-O.png" />
-      <TouchableOpacity>
-        <Text style={styles.logoutText}>Sair</Text>
-      </TouchableOpacity>
+      <LogoSvg style={styles.logo} />
+      <View style={styles.logout}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
+        <UserPhoto imageUri="https://github.com/PedroHenrique-O.png" />
+      </View>
     </View>
   );
 }

@@ -28,6 +28,8 @@ export function UserPhoto({ imageUri, sizes = "NORMAL" }: Props) {
   const { containerSize, avatarSize } = SIZES[sizes];
   return (
     <LinearGradient
+      start={{ x: 0, y: 0.8 }}
+      end={{ x: 0.9, y: 1 }}
       colors={[COLORS.PINK, COLORS.YELLOW]}
       style={[
         styles.container,
