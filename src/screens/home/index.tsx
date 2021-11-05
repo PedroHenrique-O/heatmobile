@@ -4,10 +4,7 @@ import { styles } from "./styles";
 import { Header } from "../../components/Header";
 import { MessageList } from "../../components/MessageList";
 import { SignInBox } from "../../components/SignInBox";
-<<<<<<< Updated upstream
-=======
 import { useAuth } from "../../hooks/auth";
->>>>>>> Stashed changes
 import { SendMessageForm } from "../../components/SendMessageForm";
 
 export function Home() {
@@ -20,13 +17,8 @@ export function Home() {
       <View style={styles.container}>
         <Header />
         <MessageList />
-<<<<<<< Updated upstream
-        <SendMessageForm />
-        {/* <SignInBox /> */}
-=======
 
         {user ? <SendMessageForm /> : <SignInBox />}
->>>>>>> Stashed changes
       </View>
     </KeyboardAvoidingView>
   );

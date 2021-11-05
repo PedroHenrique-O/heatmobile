@@ -1,24 +1,13 @@
-<<<<<<< Updated upstream
-import React from "react";
-
-import { TextInput, View } from "react-native";
-=======
 import React, { useState } from "react";
 
 import { Alert, Keyboard, TextInput, View } from "react-native";
 import { api } from "../../services/api";
->>>>>>> Stashed changes
 import { COLORS } from "../../theme";
 import { Button } from "../Button";
 
 import { styles } from "./styles";
 
 export function SendMessageForm() {
-<<<<<<< Updated upstream
-  return (
-    <View style={styles.container}>
-      <TextInput style={styles.input} />
-=======
   const [message, setMessage] = useState("");
   const [sendingMessage, setSendingMessage] = useState(false);
 
@@ -51,16 +40,12 @@ export function SendMessageForm() {
         value={message}
         editable={!sendingMessage}
       />
->>>>>>> Stashed changes
       <Button
         backgroundColor={COLORS.PINK}
         color={COLORS.WHITE}
         title="ENVIAR MENSAGEM"
-<<<<<<< Updated upstream
-=======
         isLoading={sendingMessage}
         onPress={handleMessageSubmit}
->>>>>>> Stashed changes
       />
     </View>
   );

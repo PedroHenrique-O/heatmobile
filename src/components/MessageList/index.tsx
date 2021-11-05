@@ -1,20 +1,3 @@
-<<<<<<< Updated upstream
-import React, { Props } from "react";
-import { Message, MessageProps } from "../Message";
-import { ScrollView, View } from "react-native";
-
-import { styles } from "./styles";
-
-export function MessageList() {
-  const message: MessageProps = {
-    id: "1",
-    text: "Aplicação para o DoWhile 2021, utilizando React-Native com TypeScript. ",
-    user: {
-      name: "Pedro Henrique",
-      avatar_url: "http://github.com/PedroHenrique-O.png",
-    },
-  };
-=======
 import React, { Props, useState, useEffect } from "react";
 import { Message, MessageProps } from "../Message";
 import { ScrollView, View } from "react-native";
@@ -63,24 +46,15 @@ export function MessageList() {
   //     avatar_url: "http://github.com/PedroHenrique-O.png",
   //   },
   // };
->>>>>>> Stashed changes
   return (
     <ScrollView
       style={styles.container}
       contentContainerStyle={styles.content}
       keyboardShouldPersistTaps="never"
     >
-<<<<<<< Updated upstream
-      <Message data={message} />
-      <Message data={message} />
-      <Message data={message} />
-      <Message data={message} />
-      <Message data={message} />
-=======
       {currentMessage.map((messages) => (
         <Message key={messages.id} data={messages} />
       ))}
->>>>>>> Stashed changes
     </ScrollView>
   );
 }
