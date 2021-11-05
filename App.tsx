@@ -9,6 +9,9 @@ import {
 import AppLoading from "expo-app-loading";
 import { View, Text } from "react-native";
 import { MessageList } from "./src/components/MessageList";
+// import { View, Text } from "react-native";
+// import { MessageList } from "./src/components/MessageList";
+import { AuthProvider } from "./src/hooks/auth";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -20,9 +23,9 @@ export default function App() {
     return <AppLoading />;
   }
   return (
-    <>
-      <StatusBar style="light" />
+    <AuthProvider>
+      <StatusBar style="light" translucent backgroundColor="transparent" />
       <Home />
-    </>
+    </AuthProvider>
   );
 }
